@@ -31,12 +31,12 @@ public class TestBase {
 	
 	
 	public TestBase() throws IOException {
-		File file = new File("./properties/files/ListStopWords.txt");  
-		FileInputStream configfile = new FileInputStream(".\\src\\main\\java\\config\\config.properties");
+//		File file = new File("./properties/files/ListStopWords.txt");  
+//		FileInputStream configfile = new FileInputStream(".\\src\\main\\java\\config\\config.properties");
 		
 		
-		prop = new Properties();
-		prop.load(configfile);
+//		prop = new Properties();
+//		prop.load(configfile);
 		System.out.println("properties file loaded");
 		
 		
@@ -45,8 +45,8 @@ public class TestBase {
 	
 	public static void initialize() throws IOException {
 		
-		String url = prop.getProperty("url");
-		String browserName = prop.getProperty("browser");
+		String url = "https://www.saucedemo.com/";
+		String browserName = "chrome";
 		if (browserName.equalsIgnoreCase("chrome")){
 //			String driverpath= "C:\\Users\\mg22250\OneDrive - Deere & Co\\Desktop\\Common\\Workspace\\javaSelenium\\ecommerce\\drivers\\chromedriver.exe";
 //			System.setProperty("webdriver.chrome.driver", driverpath);
