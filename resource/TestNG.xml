@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Testing Sauce Labs">
+    <test name="Regression">
+         <classes>
+             <class name="test.AddToCarttest"/>
+             <class name="test.Logintest"/>
+             <class name="test.CheckoutOverviewtest"/>
+          </classes>
+     </test> <!-- Test -->
+</suite> <!-- Suite -->
